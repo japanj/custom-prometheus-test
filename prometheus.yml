@@ -38,7 +38,7 @@ scrape_configs:
   - job_name: "kafka-connect"
     static_configs:
       - targets:
-          - "cp-kafka-connect-test-new-2-dc-evst-nonprod.apps.dn01.exxonmobil.com"
+          - "cp-kafka-connect-test-new-2-dc-evst-nonprod.apps.dn01.exxonmobil.com:443"
         labels:
           env: "dev"
           kafka_connect_cluster_id: "cluster1"
